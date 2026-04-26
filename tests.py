@@ -14,6 +14,12 @@ def test_sample_get(client):
     assert response.data.decode() == 'Hello, World!'
 
 
+def test_sample_get2(client):
+    response = client.get('/sampleGet2')
+    assert response.status_code == 200
+    assert response.data.decode() == 'Hello, World2!'
+
+
 def test_sample_post(client):
     response = client.post('/samplePost', json={'key': 'value'})
     assert response.status_code == 200
