@@ -17,6 +17,11 @@ def sampleGet2() -> str:
     return 'Hello, World2!'
 
 
+@app.route('/sampleGet3')
+def sampleGet2() -> str:
+    return 'Hello, World3!'
+
+
 @app.route('/samplePost', methods=['POST'])
 def samplePost() -> dict[str, Any]:
     req: Any = request.get_json()

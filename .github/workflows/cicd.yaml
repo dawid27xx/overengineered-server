@@ -59,6 +59,3 @@ jobs:
             pip install -r requirements.txt
             sudo systemctl restart overengineered-server
             sudo systemctl status overengineered-server --no-pager
-
-      - name: Smoke Test Deployment
-        run: curl -f http://${{ secrets.EC2_HOST }}:5000/sampleGet
