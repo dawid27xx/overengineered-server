@@ -23,6 +23,12 @@ def test_sample_get2(client: FlaskClient) -> None:
     assert response.data.decode() == 'Hello, World2!'
 
 
+def test_sample_get3(client: FlaskClient) -> None:
+    response = client.get('/sampleGet3')
+    assert response.status_code == 200
+    assert response.data.decode() == 'Hello, World3!'
+
+
 def test_sample_post(client: FlaskClient) -> None:
     response = client.post('/samplePost', json={'key': 'value'})
     assert response.status_code == 200
