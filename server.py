@@ -8,6 +8,11 @@ def sampleGet():
     return 'Hello, World!'
 
 
+@app.route('/sampleGet2')
+def sampleGet2():
+    return 'Hello, World2!'
+
+
 @app.route('/samplePost', methods=['POST'])
 def samplePost():
     req = request.get_json()
