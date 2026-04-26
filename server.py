@@ -18,7 +18,7 @@ def sampleGet2() -> str:
 
 
 @app.route('/sampleGet3')
-def sampleGet2() -> str:
+def sampleGet3() -> str:
     return 'Hello, World3!'
 
 
